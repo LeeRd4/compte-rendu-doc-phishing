@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<style>
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;   /* centre horizontal */
+    align-items: center;       /* centre vertical */
+
+    /* fond arc-en-ciel animé */
+    background: linear-gradient(270deg, red, orange, yellow, green, blue, purple);
+    background-size: 400% 400%;
+    animation: rainbowBG 1s ease infinite;
+}
+
+/* animation du fond */
+@keyframes rainbowBG {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* texte */
+h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Vous êtes désormais un PESTEL de nata</h1>
+
+</body>
+</html>
